@@ -16,7 +16,7 @@ export class AppComponent implements OnInit{
         "This is my first snap",
         "https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg",
         new Date(),
-        0,
+        40,
         "Paris"
     );
 
@@ -25,7 +25,7 @@ export class AppComponent implements OnInit{
         "This is my second snap",
         "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Three_Rock_Mountain_Southern_Tor.jpg/2880px-Three_Rock_Mountain_Southern_Tor.jpg",
         new Date(),
-        1,
+        121,
         "London"
     );
 
@@ -34,7 +34,7 @@ export class AppComponent implements OnInit{
         "This is my last snap",
         "https://wtop.com/wp-content/uploads/2020/06/HEALTHYFRESH.jpg",
         new Date(),
-        2
+        23
     );
 
   }
