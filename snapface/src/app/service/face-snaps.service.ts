@@ -40,10 +40,10 @@ export class FaceSnapsService{
     return this.faceSnaps;
   }
 
-  getfaceSnapById(id: number) : FaceSnapModel{
+  getFaceSnapById(id_snaps: number): FaceSnapModel{
     const faceSnap = this.faceSnaps.find(
       (faceSnapObject) => {
-        return faceSnapObject.id === id;
+        return faceSnapObject.id === id_snaps;
       }
     );
     if (faceSnap){
@@ -53,18 +53,9 @@ export class FaceSnapsService{
     }
   }
 
-
-  snapFaceSnapById(id_snaps: number) : void{
-    const faceSnap = this.faceSnaps.find(
-      (faceSnapObject) => {
-        return faceSnapObject.id === id_snaps;gi
-      }
-    );
-    if (faceSnap){
-      faceSnap.snaps++;
-    } else {
-      throw new Error("Face Snap not found");
-    }
+  snapFaceSnapById(id_snaps: number, snapType: 'snap' | 'unsnap') : void{
+    const faceSnap = this.getFaceSnapById(id_snaps);
+    snapType === 'snap' ? faceSnap.snaps++ : faceSnap.snaps--;
   }
 
 }

@@ -5,3 +5,17 @@ header{
   padding: 10px;
   font-family: "Space Grotesk Light", sans-serif;
 }
+
+
+nav{
+  a{
+    margin: 0 1rem;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  .active{
+    text-decoration: underline;
+  }
+}
