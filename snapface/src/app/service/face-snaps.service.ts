@@ -40,10 +40,24 @@ export class FaceSnapsService{
     return this.faceSnaps;
   }
 
-  snapFaceSnapById(id: number) : void{
+  getfaceSnapById(id: number) : FaceSnapModel{
     const faceSnap = this.faceSnaps.find(
       (faceSnapObject) => {
         return faceSnapObject.id === id;
+      }
+    );
+    if (faceSnap){
+      return faceSnap;
+    } else {
+      throw new Error("Face Snap not found");
+    }
+  }
+
+
+  snapFaceSnapById(id_snaps: number) : void{
+    const faceSnap = this.faceSnaps.find(
+      (faceSnapObject) => {
+        return faceSnapObject.id === id_snaps;gi
       }
     );
     if (faceSnap){

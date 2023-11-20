@@ -31,5 +31,6 @@ export class FaceSnapeComponent implements OnInit {
 
   }
 
+
   protected readonly FaceSnapModel = FaceSnapModel;
 }
