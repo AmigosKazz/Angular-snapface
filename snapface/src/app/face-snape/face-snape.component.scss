@@ -9,6 +9,7 @@
   }
   h2 {
     margin-bottom: 0;
+    font-family: "Amiri Quran", sans-serif;
   }
   p {
     font-weight: 300;
@@ -27,6 +28,17 @@
     &:active {
       transform: translate(1px, 1px);
       box-shadow: lightgray 0 0 5px;
+    }
+  }
+}
+.snapped {
+  background-color: rgba(lightgreen, 0.4);
+  color: darkgreen;
+  button {
+    box-shadow: lightgreen 3px 3px 7px;
+    color: darkgreen;
+    &:active {
+      box-shadow: lightgreen 0 0 5px;
     }
   }
 }
